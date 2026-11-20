@@ -1,0 +1,21 @@
+{
+  "name": "personal-ai-assistant",
+  "private": true,
+  "workspaces": [
+    "apps/backend",
+    "apps/dashboard"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev:backend": "npm run dev -w apps/backend",
+    "dev:dashboard": "npm run dev -w apps/dashboard",
+    "build": "npm run build -w apps/backend && npm run build -w apps/dashboard",
+    "test": "npm test -w apps/backend",
+    "typecheck": "npm run typecheck -w apps/backend"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}

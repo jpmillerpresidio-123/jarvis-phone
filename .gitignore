@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.next/
+out/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+.vercel
+.railway
+coverage/
+*.tsbuildinfo
+.claude/launch.json
+.claude/settings.local.json
